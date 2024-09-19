@@ -43,7 +43,7 @@ add_action( 'admin_init', 'editor_blocks_redirect' );
 
 // Add custom block category.
 add_filter(
-	'block_categories',
+	'block_categories_all',
 	function( $categories, $post ) {
 		return array_merge(
 			$categories,
